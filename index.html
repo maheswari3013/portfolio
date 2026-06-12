@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devarakonda Maheswari | Portfolio</title>
+  <!-- Google Fonts: Outfit (Header) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Glowing Background Mesh -->
+  <div class="mesh-bg">
+    <div class="blob blob-purple"></div>
+    <div class="blob blob-orange"></div>
+    <div class="blob blob-cyan"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-accent">&lt;</span>Maheswari<span class="logo-accent"> /&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="greeting-badge">👋 Welcome to my portfolio</div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Maheswari</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          I am a <span id="typed-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-description">
+          Computer Science student and full-stack developer passionate about building dynamic web applications. Specializing in the MERN stack, database design, and automated backend systems.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-graphics">
+        <div class="profile-card">
+          <div class="profile-avatar">
+            <svg viewBox="0 0 100 100" width="120" height="120" class="avatar-svg">
+              <defs>
+                <linearGradient id="g-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ff9900" />
+                  <stop offset="50%" stop-color="#8b5cf6" />
+                  <stop offset="100%" stop-color="#06b6d4" />
+                </linearGradient>
+              </defs>
+              <!-- AWS-Orange / Purple glowing ring -->
+              <circle cx="50" cy="50" r="44" stroke="url(#g-ring)" stroke-width="3" fill="none" class="rotating-ring" />
+            </svg>
+            <img src="profile.png" alt="Devarakonda Maheswari" class="avatar-img">
+          </div>
+          <div class="profile-info">
+            <h3>Devarakonda Maheswari</h3>
+            <p>Software Intern</p>
+            <div class="badge-list">
+              <span class="mini-badge">MERN Stack</span>
+              <span class="mini-badge">Python</span>
+              <span class="mini-badge">AP, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <h3>My Profile</h3>
+          <p>
+            I am a student currently pursuing my Bachelor of Technology (B.Tech) in Computer Science & Engineering (2023 - 2027) at Baba Institute of Technology and Sciences (BITS Vizag). I have maintained a CGPA of 8.0, and hold a strong foundation in core computer science subjects.
+          </p>
+          <p>
+            My passion lies in full-stack web development. I love building logic, structuring databases, and seeing a product come to life from backend endpoints to slick frontend components.
+          </p>
+        </div>
+        <div class="about-stats-card glass-card">
+          <div class="stat-item">
+            <span class="stat-number gradient-text">8.0</span>
+            <span class="stat-label">B.Tech CGPA</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number gradient-text">95.8%</span>
+            <span class="stat-label">Intermediate Score</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number gradient-text">1+</span>
+            <span class="stat-label">Major Full-Stack Build</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">What I work with</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="skills-grid">
+        
+        <!-- Category: Languages -->
+        <div class="skills-category glass-card">
+          <div class="category-header">
+            <svg class="category-icon text-orange" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20A8 8 0 0 1 4 12A8 8 0 0 1 12 4M11 6V14H13V6H11M11 16V18H13V16H11Z"/>
+            </svg>
+            <h3>Languages</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge glow-orange">Python</span>
+            <span class="skill-badge glow-purple">JavaScript (ES6+)</span>
+            <span class="skill-badge glow-cyan">HTML5</span>
+            <span class="skill-badge glow-cyan">CSS3</span>
+            <span class="skill-badge glow-orange">C</span>
+            <span class="skill-badge glow-purple">Java (Basics)</span>
+          </div>
+        </div>
+
+        <!-- Category: Frontend -->
+        <div class="skills-category glass-card">
+          <div class="category-header">
+            <svg class="category-icon text-cyan" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>
+            <h3>Frontend Tools</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge glow-cyan">React.js</span>
+            <span class="skill-badge glow-cyan">Tailwind CSS</span>
+            <span class="skill-badge glow-purple">Vite</span>
+            <span class="skill-badge glow-orange">FullCalendar</span>
+            <span class="skill-badge glow-purple">Recharts</span>
+            <span class="skill-badge glow-cyan">DnD Kit</span>
+          </div>
+        </div>
+
+        <!-- Category: Backend & Cloud -->
+        <div class="skills-category glass-card">
+          <div class="category-header">
+            <svg class="category-icon text-purple" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M12 2a10 10 0 0 0-10 10a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 4a6 6 0 0 1 6 6a6 6 0 0 1-6 6a6 6 0 0 1-6-6a6 6 0 0 1 6-6Z"/>
+            </svg>
+            <h3>Backend & Services</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge glow-purple">Node.js</span>
+            <span class="skill-badge glow-purple">Express.js</span>
+            <span class="skill-badge glow-cyan">RESTful APIs</span>
+            <span class="skill-badge glow-orange">Web-Push Notifications</span>
+            <span class="skill-badge glow-purple">Node-Cron Jobs</span>
+            <span class="skill-badge glow-cyan">PDFKit Rendering</span>
+          </div>
+        </div>
+
+        <!-- Category: Databases & Tools -->
+        <div class="skills-category glass-card">
+          <div class="category-header">
+            <svg class="category-icon text-orange" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M19.31 9.9L12.5 3.08a.74.74 0 0 0-1 0L4.69 9.9a.74.74 0 0 0 0 1l6.81 6.82a.74.74 0 0 0 1 0l6.81-6.82a.74.74 0 0 0 0-1M12 4.12l6 6l-6 6l-6-6Z"/>
+            </svg>
+            <h3>Databases & DevOps</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge glow-orange">MongoDB</span>
+            <span class="skill-badge glow-orange">Git</span>
+            <span class="skill-badge glow-purple">GitHub</span>
+            <span class="skill-badge glow-cyan">VS Code</span>
+            <span class="skill-badge glow-orange">Postman</span>
+            <span class="skill-badge glow-purple">JWT Authentication</span>
+            <span class="skill-badge glow-cyan">Passport.js OAuth 2.0</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">My builds</span>
+        <h2 class="section-title">Projects Showcase</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <!-- Main Project: StudySync -->
+      <div class="project-showcase glass-card">
+        <div class="project-visual">
+          <div class="sync-illustration">
+            <!-- Neon animated calendar graphic representation -->
+            <div class="calendar-grid">
+              <div class="calendar-header-bar">
+                <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+              </div>
+              <div class="calendar-body">
+                <div class="calendar-block anim-delay-1">Study</div>
+                <div class="calendar-block anim-delay-2">React</div>
+                <div class="calendar-block anim-delay-3">Node</div>
+                <div class="calendar-block active-block">Auto Sync</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-details">
+          <div class="project-meta-row">
+            <span class="project-badge">MERN Stack Application</span>
+            <span class="project-badge bg-aws-orange">AWS-Ready</span>
+          </div>
+          <h3 class="project-name">StudySync – Automated Timetable Planner</h3>
+          <p class="project-desc">
+            A dynamic React + Node.js student timetable application that replaces static calendars with smart, automated, self-healing schedules. It uses custom heuristics to structure study hours based on difficulty, priority, and knowledge levels, and dynamically auto-reschedules missed sessions via server background tasks.
+          </p>
+
+          <h4 class="sub-heading">Key Architecture Features:</h4>
+          <ul class="features-list">
+            <li><strong>Self-Healing Engine</strong>: Background cron jobs detect missed sessions and automatically reschedule them to avoid overlaps.</li>
+            <li><strong>Web Push Notifications</strong>: Direct browser push reminders and analytics digests triggered by backend events.</li>
+            <li><strong>Google Sync</strong>: Seamless two-way integration with Google Calendar API using OAuth 2.0.</li>
+            <li><strong>On-Demand Export</strong>: Dynamic layout PDF generation built directly on the server side using PDFKit.</li>
+          </ul>
+
+          <div class="project-tech-tags">
+            <span class="tag">React.js</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Web-Push</span>
+            <span class="tag">OAuth 2.0</span>
+            <span class="tag">Node-Cron</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://lnkd.in/gNV2DJny" target="_blank" class="project-btn btn-primary-outline">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/maheswari3013" target="_blank" class="project-btn btn-secondary-outline">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.41 6,9.54 6.63,8.85C6.53,8.6 6.18,7.58 6.73,6.21C6.73,6.21 7.56,5.95 9.45,7.23C10.24,7 11.09,6.9 11.93,6.9C12.77,6.9 13.62,7 14.4,7.23C16.3,5.95 17.12,6.21 17.12,6.21C17.67,7.58 17.32,8.6 17.22,8.85C17.85,9.54 18.23,10.41 18.23,11.5C18.23,15.32 15.9,16.16 13.67,16.41C14.03,16.72 14.35,17.33 14.35,18.27C14.35,19.62 14.34,20.71 14.34,21C14.34,21.27 14.5,21.58 15,21.5C18.96,20.17 21.82,16.42 21.82,12C21.82,6.58 17.42,2 12,2Z"/></svg>
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Timeline Section -->
+  <section id="education" class="education-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Academic Milestones</span>
+        <h2 class="section-title">Education History</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Timeline Item 1: BTech -->
+        <div class="timeline-item">
+          <div class="timeline-marker marker-orange">
+            <span class="marker-inner"></span>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2023 – 2027</span>
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <h4 class="text-orange">Computer Science & Engineering</h4>
+            <p class="school-label">Baba Institute of Technology and Sciences (BITS Vizag)</p>
+            <div class="timeline-gpa">Current CGPA: <span class="gpa-badge text-orange">8.0</span></div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: Intermediate -->
+        <div class="timeline-item">
+          <div class="timeline-marker marker-purple">
+            <span class="marker-inner"></span>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2021 – 2023</span>
+            <h3>Intermediate (Class XII - MPC)</h3>
+            <h4 class="text-purple">Board of Intermediate Education</h4>
+            <p class="school-label">Regency Junior College, Yanam</p>
+            <div class="timeline-gpa">Final Percentage: <span class="gpa-badge text-purple">95.8%</span></div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3: 10th CBSE -->
+        <div class="timeline-item">
+          <div class="timeline-marker marker-cyan">
+            <span class="marker-inner"></span>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2021</span>
+            <h3>Secondary School Certificate (Class X - CBSE)</h3>
+            <h4 class="text-cyan">CBSE Curriculum</h4>
+            <p class="school-label">Jawahar Navodaya Vidyalaya, Yanam</p>
+            <div class="timeline-gpa">Final Percentage: <span class="gpa-badge text-cyan">93.4%</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Reach out</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact details links -->
+        <div class="contact-info-panel">
+          <div class="contact-card glass-card">
+            <div class="contact-icon-wrapper bg-orange">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Call Me</h4>
+              <p><a href="tel:8297796254">8297796254</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card">
+            <div class="contact-icon-wrapper bg-purple">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Email Me</h4>
+              <p><a href="mailto:dmahi3224@gmail.com">dmahi3224@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card">
+            <div class="contact-icon-wrapper bg-cyan">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <p><a href="https://linkedin.com/in/maheswari-devarakonda-159353282" target="_blank">maheswari-devarakonda-159353282</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Form -->
+        <div class="contact-form-panel glass-card">
+          <form id="portfolio-contact-form">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="4" placeholder="Hi Maheswari, I would love to connect about an internship opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message
+            </button>
+            <div id="form-feedback" class="form-feedback-msg" style="display:none;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Devarakonda Maheswari. Built with MERN, HTML5, and CSS3.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/maheswari3013" target="_blank" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/maheswari-devarakonda-159353282" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
